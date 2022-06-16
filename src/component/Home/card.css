@@ -1,0 +1,39 @@
+.card-main {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5vh 5vw;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    margin: 2vh;
+}
+
+.name-plate {
+    font-size: calc(1vw + 1rem)
+}
+
+@media(max-device-width:425px) {
+    .name-plate {
+        font-size: calc(1vw + 2.5rem)
+    }
+}
+
+
+.photo-holder {
+    /* background-color: yellow; */
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 10vh;
+    width: 10vh;
+    background-size: contain;
+    background-position: center;
+}
+.loading {
+    height: 20vh;
+    text-align: center;
+}
+@media(max-device-width:425px) {
+    .loading {
+        font-size: 4vw;
+
+    }
+}

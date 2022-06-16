@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+}
+
+.left {
+    height: 100vh;
+    width: 50%;
+    background: url(./left_bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media(max-device-width:425px) {
+    .left {
+        display: none;
+    }
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    padding: 12vh;
+    height: 100vh;
+    width: 50%;
+    /* background-color: orange; */
+}
+
+@media(max-device-width:425px) {
+    .right {
+        width: 100%;
+        font-size: 5vw;
+    }
+    form {
+        font-size: 5vw;
+    }
+    .right input[type=text],input[type=password] {
+        font-size: 4vw;
+    }
+    .right input::placeholder {
+        font-size: 4vw;
+    }
+}
+
+input {
+    height: 5vh;
+}
+
+label {
+    padding-top: 4vh;
+}
+
+input[type=text],
+input[type=password] {
+    border: none;
+    border-bottom: 2px solid grey;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+input[type=password]:focus {
+    outline: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login {
+    margin-top: 8vh;
+    height: 7vh;
+    background: green;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+@media(max-device-width:425px)
+{
+    .login {
+            font-size: 5vw;
+        }
+}
+
+.login:hover {
+    background: rgb(1, 103, 1);
+}
+
+.login:active {
+    transform: translateY(4px);
+}
